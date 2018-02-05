@@ -10,23 +10,12 @@ process.on('unhandledRejection', err => {
   throw err;
 });
 
-class ServerlessError extends Error {
-  constructor(message, statusCode) {
-    super(message);
-    this.name = this.constructor.name;
-    this.message = message;
-    this.statusCode = statusCode;
-    Error.captureStackTrace(this, this.constructor);
-  }
-};
-
 describe('Variables', function variables() {
   it('simpler', () => {
-    const sls = new Serverless();
     return expect(BbPromise.reduce([
       BbPromise.resolve('foo'),
       BbPromise.resolve('bar'),
-      BbPromise.reject(new ServerlessError('reason'))
+      BbPromise.reject(new Error('reason'))
     ])).to.be.rejected;
   })
 });
