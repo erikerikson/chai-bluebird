@@ -4,7 +4,7 @@
   "description": "desc",
   "main": "index.js",
   "scripts": {
-    "test": "node test.0.js && node test.1.js"
+    "test": "node test.0.js && node test.1.js && node test.2.js"
   },
   "author": "Erik Erikson <erik.m.erikson@nordstrom.com>",
   "repository": {
@@ -13,6 +13,6 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "bluebird": "https://github.com/overlookmotel/bluebird#fix-map-unhandled-rejection"
+    "bluebird": "3.5.1"
   }
 }

@@ -2,6 +2,6 @@
 # yarn lockfile v1
 
 
-"bluebird@https://github.com/overlookmotel/bluebird#fix-map-unhandled-rejection":
+bluebird@3.5.1:
   version "3.5.1"
-  resolved "https://github.com/overlookmotel/bluebird#bf1f82e46ebf3d43d551c3971469da21f3341ea0"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
